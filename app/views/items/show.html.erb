@@ -1,2 +1,13 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+<table>
+<tr>
+    <td>Item name</td>
+    <td><%= @item.name %></td>
+</tr>
+<tr>
+    <td>Item price</td>
+    <td><%= @item.price %></td>
+</tr>
+<tr>
+    <td> <%= link_to 'Back', items_path %> </td>
+</tr>
+</table>

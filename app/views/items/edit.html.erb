@@ -1,2 +1,7 @@
-<h1>Items#edit</h1>
-<p>Find me in app/views/items/edit.html.erb</p>
+<h3>Edit an Item</h3>
+<%= form_with model: @item do |form| %>
+  <%= form.text_field :name, placeholder: @item.name %>
+  <%= form.text_field :price, placeholder: @item.price %>
+  <%= form.submit 'update' %>
+  <%= link_to 'Back', items_path %>
+<% end %>

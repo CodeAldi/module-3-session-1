@@ -4,6 +4,7 @@
     <tr>
         <td><b>Name</b></td>
         <td><b>Price</b></td>
+        <td colspan="3"></td>
     </tr>
   </thead>
   <tbody>
@@ -11,6 +12,9 @@
       <tr>
         <td><%= item.name %></td>
         <td><%= item.price %></td>
+        <td><%= link_to 'Show' , item_path(item) %></td>
+        <td><%= link_to 'Edit' , edit_item_path(item) %></td>
+        <td><%= link_to 'Delete' , item, :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>
